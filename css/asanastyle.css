@@ -1,0 +1,648 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* Header started */
+
+header .asannav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(17, 135, 231, 0.959) !important;
+}
+header .asannav .row{
+    width: 96%;
+    margin: auto;
+    height: 214px;
+       
+}
+header .asannav .row .logo img{
+    width: 170px;
+    height: auto;
+}
+ /* .navbar .leftnav{
+    background-color: antiquewhite;
+}  */
+/* header .navcontainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position:sticky;
+    top:0;
+    right: 0;
+    left: 0;   
+    background-color: rgba(17, 135, 231, 0.959);
+    border: 1px solid black;  
+} */
+.navbar .leftnav:hover{
+    cursor: pointer;
+}
+.navbar .leftnav span{
+    display: flex;
+    justify-content: flex-start;
+}
+.navbar .leftnav i{
+    color: aqua;
+    font-size: 3em;
+}
+/* .navbar .leftnav .logo h3{
+    font-size: 1.2em;
+    margin-top: 26px;
+    color: white;
+}
+.navbar .leftnav .logo img{
+    width: 80px;
+    height: auto;
+} */
+.rightnav{
+    display: flex;
+    align-items: center;
+    /* background-color: burlywood; */
+    justify-content: flex-end;
+    /* margin-left: 45px; */
+}
+.rightnav .phone, .rightnav .menu{
+    display: flex;
+}
+.rightnav .phone:hover, .rightnav .menu:hover{
+    cursor: pointer;
+}
+
+/* .rightnav .phone{
+    background-color: cadetblue;
+} */
+/* .rightnav .menu{
+    background-color: chartreuse;
+} */
+
+/* Submenu started */
+.hide{
+    display: none;
+    
+}
+/* .submenu{
+    display: none;
+} */
+
+.submenu{
+    position: absolute;
+    right: -50%;
+    background-color: chartreuse;
+    width: 20%;
+    height: 100%;
+    z-index:100;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.submenu .submenucontainer{
+    width: 90%;
+    margin: auto;
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    overflow: auto;
+    height:100%;
+    background-color: rgb(29, 147, 243);
+    /* background-color: coral; */
+    box-sizing: border-box;
+}
+
+.submenu ul li{
+    list-style-type: none;
+    display: block;
+    font-size:0.8em;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.submenu ul{
+    margin-top: 10px 0px 0px 0px ;
+}
+.submenu ul .contactli i{
+    display: none;
+    font-size: 0.5em;
+    color: white;
+}
+.submenu span{
+    display: block;
+    padding: 6px 0px;
+    color:white; 
+    margin: 0;
+}
+
+.submenu li span i{
+    background-color: transparent;
+}
+
+.fitycontainer{
+    display: flex;
+    align-items: flex-start;
+    /* background-color: brown; */
+}
+.fa-facebook-f, .fa-instagram, .fa-twitter, .fa-youtube{
+    color:white;
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+.my-contact-style{
+    padding-left: 20px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.my-contact-style-2{
+    padding-left: 0px;
+}
+
+/* Submenu ended */
+header .rightnav .phone  h3{
+    display:inline;
+    font-size: 1.1em;
+    color: white;
+    position: relative;
+}
+.rightnav .phone i{
+    color: white;
+    font-size:0.6em;
+    transform:rotateY(220deg);
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+header .rightnav .menu h3{
+    display: inline;
+    font-size: 0.9em;
+    color: white;
+}
+header .rightnav .menu i{
+    margin-left: 6px;
+    margin-top: 2px;
+    color: white;
+    font-size: 1.1em;
+}
+header .navinput{
+    width: 70%;
+    margin: auto;
+    height: 50px;
+    /* background-color: aqua; */
+    padding-bottom: 90px;
+}
+.navinput .inputcontrol{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 60px;
+    padding-left: 40px;
+    border-radius: 6px !important;
+    /* background-color: aqua; */
+}
+.navinput i{
+    display: flex;
+    position: absolute;
+    top: 26px;
+    padding-left: 20px;
+    color: blue;
+    font-size: 0.8em;
+}
+.navinput .checkbox{
+    display: flex;
+    position: absolute;
+    top: 26px;
+    right: 110px;
+}
+.navinput span{
+    display: flex;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    color: black;
+}
+/* Header ended */
+.bigdiv{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+/* Mainimage startde */
+.mainimagecontainer{
+    width: 90%;
+    margin: auto;
+    padding-top: 26px;
+    padding-bottom: 22px;
+    /* background-color: chocolate; */
+}
+.mainimagecontainer .mainimgmobile{
+    display: none;
+}
+/* Mainimage ended */
+/* Servicecontainer started */
+
+.servicemaincontainer{
+    width: 100%;
+    margin:auto;
+    height: 600px;
+    background-color: whitesmoke;
+}
+.servicemaincontainer .servicecontainer{
+    width: 92%;
+    margin: auto;
+    height: 560px;
+    /* background-color: coral; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.servicemaincontainer .servicecontainer .mycardimg img{
+    border-radius: 20px;
+    /* opacity: 0.5; */
+    width: 100%;
+    height: 160px;
+    /* transform: matrix(1, 0.3, 0, 1, 0, 0);
+    overflow: hidden; */
+}
+.servicemaincontainer .servicecontainer .cardimage .seyyar{
+    display: none;
+}
+.servicemaincontainer .servicecontainer .my-overlay:hover{
+    cursor: pointer;
+}
+.servicecontainer .cardimage img:hover{
+    opacity: 0.1 !important;
+}
+.servicemaincontainer .servicecontainer .cardimage h5{
+    font-size: 1.1em;
+}
+.servicemaincontainer .servicecontainer .cardimage:hover p{
+    color: transparent;
+}
+.servicemaincontainer .servicecontainer .cardimage p{
+    font-size: 0.8em;
+}
+.servicemaincontainer .servicecontainer .cardimage h5, .servicemaincontainer .servicecontainer .cardimage p{
+    text-align: center;
+    color:  rgba(9, 137, 241, 0.959);
+}
+.servicemaincontainer .servicecontainer .serviceicon{
+    display: none;
+}
+/* Servicecontainer ended */
+/* Enchoxmuraciet started */
+.enchoxmuraciet{
+    text-align: center;
+    background-color: whitesmoke;
+}
+.enchoxmuraciet .buttonscontainer{
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.enchoxmuraciet .buttonscontainer button{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: 14px;
+    margin-right: 8px;
+    align-items: center !important;
+    border-radius: 6px;
+    height: 50px;
+}
+.enchoxmuraciet .buttonscontainer button p{
+    font-size: 0.8em;
+
+}
+.enchoxmuraciet .buttonscontainer button:hover{
+    background-color: rgb(8, 8, 90);
+}
+.enchoxmuraciet .buttonscontainer i{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/* Enchoxmuraciet  ended */
+/* Footer started */
+footer .footer{
+    width: 100%;
+    margin:auto;
+    padding-left: 48px;
+    padding-right: 38px;
+    height: 100px;
+    /* background-color: aqua; */
+    display: flex;
+}
+.footer img{
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+}
+
+.footerar{
+    display: flex;
+}
+.footerar p{
+    font-size: 0.8em;
+    text-align: start;
+    color: blue;
+}
+.footerar p:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+    
+}
+.rightfooter {
+    width: 100%;
+    height: 40px;
+    /* background-color: darkorchid; */
+    display: flex;
+    justify-content: flex-end;
+}
+.rightfooter img{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;   
+}
+.final{
+    width: 90%;
+    margin: auto;
+    height: 50px;
+    /* background-color: yellow; */
+    display: flex;
+}
+.final p{
+    font-size: 0.8em;
+}
+.leftend{
+    display: flex;
+}
+.leftend p{
+    font-size: 0.8em;
+    color: gray;
+}
+.leftend p:hover{
+    cursor: pointer;
+    color: black;
+}
+.rightend{
+    display: flex;
+    justify-content: flex-end;
+}
+.rightend span{
+    font-size: 0.8em;
+}
+/* Footer ended */
+/* For Tablet */
+@media screen and (max-width: 990px){
+    body{
+        overflow-x: hidden;
+    }   
+    /* Header started */
+    .rightnav .phone{
+        display: none;
+    } 
+    .navul{
+        display: flex;
+        flex-direction: row;
+    }
+    .leftnav{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .rightnav{
+        margin-left: 0px;
+    }
+/* Header ended  */
+/* Mainimagecontainer started */
+.mainimagecontainer img{
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   height: 440px;
+}
+.mainimagecontainer .mainimgmobile{
+    display: block;
+}
+.mainimagecontainer .mainimgdesktop{
+    display: none;
+}
+/* Servicecontainer started */
+.servicemaincontainer{
+    width: 100%;
+    height: 1300px;
+    margin: 0;
+    padding: 0;
+}
+.servicemaincontainer .servicecontainer{
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.servicemaincontainer .servicecontainer .cardimage img{
+    width: 320px;
+    height: 200px;
+    margin: 6px;
+    display: none;    
+}
+.servicemaincontainer .servicecontainer .mycardimg{
+    width: 260px !important;
+    height: auto;
+    background-color:white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px; 
+    display: flex;
+    border-radius: 10px;
+}
+.servicemaincontainer .servicecontainer .serviceicon{
+    display: block;
+}
+.servicemaincontainer .servicecontainer .my-overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Buttonscontainer started */
+.buttonscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+/* Footer container */
+footer .footer{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.footerar img{
+    margin-left: 10px;
+}
+.footerar{
+    display: inline;
+}
+.final .leftend{
+    display: inline;
+}
+.final{
+    width: 88%;
+    height: auto;
+    display: flex;
+}
+}
+/* For Mobile */
+@media screen and (max-width: 550px){
+ body{
+     overflow-x: hidden;
+ }   
+ .navbar .leftnav, .asannav, .navul, .logo{
+     width: 100%;
+     margin: 0;
+     padding: 0;   
+    /* background-color: antiquewhite;  */
+}
+ .rightnav .phone{
+     display: none;
+ }
+ .rightnav, .rightnav .menu{
+     width: 100%;
+     margin: 0;
+     padding: 0;
+ }
+/* .navinput{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+} */
+header .navinput{
+    width: 100%;
+     
+}
+.navinput i{
+    left: 0;
+}
+.navinput span{
+    right: 18px;
+    top: 20px;
+}
+.navinput .checkbox{
+    right: 80px;
+}
+.navinput .inputcontrol{
+    padding-left: 16px;
+}
+/* Header ended */
+/* Mainimagecontainer started */
+.mainimagecontainer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.mainimagecontainer img{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mainimagecontainer .mainimgmobile{
+    display: block;
+}
+.mainimagecontainer .mainimgdesktop{
+    display: none;
+}
+.servicemaincontainer{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    height: 2550px;
+}
+.servicemaincontainer .servicecontainer{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 2500px;
+}
+.servicemaincontainer .servicecontainer .my-overlay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Enchoxmuraciet started */
+.enchoxmuraciet .buttonscontainer{
+    width: 100%;
+    margin:0;
+    height: auto;
+}
+.enchoxmuraciet .buttonscontainer button{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.enchoxmuraciet .buttonscontainer button p{
+    font-size: 0.8em;
+}
+.enchoxmuraciet .buttonscontainer i{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/* Enchoxmuraciet  ended */
+/* Footer started */
+footer .footer{
+    width: 100%;
+    margin: 0;
+    height: auto;
+    /* background-color: aqua; */
+    display:block;
+    padding-left:26px;
+    padding-right: 0px;
+}
+.footerar img{
+    margin-left: 12px;  
+}
+.footerar{
+    display:block;
+}
+.rightfooter {
+    display: block;
+    margin-left: 12px;
+}
+.final{
+    width: 100%;
+    margin: 0;
+    height: auto;
+    /* background-color: yellow; */
+    display: block;
+    line-height: 10px;
+}
+.leftend{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* Footer ended */
+
+
+
+
+
+
+
+}
+
+
+
